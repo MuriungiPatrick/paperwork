@@ -1,0 +1,19 @@
+@use '../custom' as *;
+
+
+.navlinks {
+	padding: 1rem 0;
+
+	li {
+		color: $white;
+		padding: 1rem 0;
+		list-style-type: none;
+
+			i {
+			  color: $white;
+			  
+		}
+	}
+
+}
+
