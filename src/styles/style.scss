@@ -1,2 +1,5 @@
 @use "./custom";
+@use './scss/header' as *;
+@use './scss/sidebar' as *;
+@use './scss/profile' as *;
 @use './scss/navlinks' as *;
