@@ -8,9 +8,11 @@ const Header = () => {
   const newLocal = "rounded-circle";
   return (
 
-  <header className="header justify-content-between d-flex align-items-center shadow-lg bg-white">
-    <div className="align-items-center justify-content-between">
-      <Link href="index.html" className="logo d-flex align-items-center">
+  <header className="header shadow justify-content-between 
+  d-flex align-items-center bg-white">
+    <div className="shadow align-items-center justify-content-between">
+      <Link href="index.html" 
+      className="logo d-flex align-items-center">
         <Image 
           src="/images/logo.png"
           width={50}
@@ -19,13 +21,14 @@ const Header = () => {
           />
         {/*<span className="d-none d-lg-block">Logoz</span>*/}
       </Link>
-      <List />
+
     </div>
 
     <nav className="header-nav ms-auto">
       <ul className="d-flex align-items-center">
         <li className="nav-item d-block d-lg-none">
-          <a className="nav-link nav-icon search-bar-toggle " href="#">
+          <a className="nav-link nav-icon search-bar-toggle 
+          " href="#">
             <Search />
           </a>
         </li>
@@ -51,15 +54,16 @@ const Header = () => {
         </li>
 
         <li className="nav-item pe-3">
-          <a className="nav-link d-flex align-items-center pe-0 pt-3" href="#" data-bs-toggle="dropdown">
-            <span className="fw-bold">Patrick</span>
+          <a className="nav-link d-flex align-items-center pe-0 pt-3" 
+          href="#" data-bs-toggle="dropdown"> 
+          <span className="fw-bold">Patrick</span>
             <Image 
               src="/images/profile.jpg" 
               alt="Profile"
               width={50}
               height={50}
               className="img-fluid rounded-circle" 
-              />            
+              />                      
           </a>
         </li>
       </ul>

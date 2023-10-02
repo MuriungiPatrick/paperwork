@@ -30,8 +30,8 @@ const Profile = () => {
         </div>
       </div>
         <div className="col-lg-6 mt-3">
-          <div className="profile profile--body bg-white">
-            <div className="p-3">                     
+          <div className="profile profile--body bg-gray-200">
+            <div className="p-4">                     
                   <h3 className="fw-bold">About me</h3>            
               <div className="mt-3">
                 <div className="show active" id="profile-overview">
@@ -43,11 +43,12 @@ const Profile = () => {
           </div>
         </div>
         <div className="col-lg-6 mt-3">
-          <div className="profile profile--body bg-white">
+          <div className="profile profile--body bg-gray-100">
             <div className="p-3">                     
                   <h3 className="fw-semibold">profile details</h3>            
               <div className="mt-3">
-                <div className="fade show active" id="profile-overview">          
+                <div className="fade show active" 
+                id="profile-overview">          
                 </div>           
               </div>
             </div>

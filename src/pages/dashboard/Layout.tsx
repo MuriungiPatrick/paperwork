@@ -12,8 +12,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
   <Header />
-<div className="bg-gray-100 d-block d-lg-flex d-flex">
-  <aside className="h-100 sidebar">
+<div className="bg-white d-block d-lg-flex d-flex">
+  <aside className="h-100 sidebar shadow">
     <Sidebar />
   </aside> 
   <main className="h-100 main w-100">            
