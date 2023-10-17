@@ -8,7 +8,7 @@ const LoginForm = () => {
     
     <form className="form w-100" novalidate="novalidate" id="kt_sign_in_form" data-kt-redirect-url="../dist/index.html" action="#">                         
         <div className="text-center pb-5 mb-10">                                
-            <h1 className="display-1 fw-bold text-dark mb-3">
+            <h1 className="text-dark pt-3 mb-3">
                 Sign In to paperwork
             </h1> 
             <div className="text-gray-400">New Here?

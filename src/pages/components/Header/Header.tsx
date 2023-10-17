@@ -10,16 +10,16 @@ const Header = () => {
 
   <header className="header shadow justify-content-between 
   d-flex align-items-center bg-white">
-    <div className="shadow align-items-center justify-content-between">
+    <div className="align-items-center justify-content-between">
       <Link href="index.html" 
       className="logo d-flex align-items-center">
         <Image 
           src="/images/logo.png"
-          width={50}
-          height={50} 
+          width={40}
+          height={80} 
           alt={'logo'}
           />
-        {/*<span className="d-none d-lg-block">Logoz</span>*/}
+        <span className="d-none d-lg-block">Logoz</span>
       </Link>
 
     </div>
@@ -53,8 +53,8 @@ const Header = () => {
           </ul>
         </li>
 
-        <li className="nav-item pe-3">
-          <a className="nav-link d-flex align-items-center pe-0 pt-3" 
+        <li className="nav-item">
+          <a className="nav-link d-flex align-items-center pt-3" 
           href="#" data-bs-toggle="dropdown"> 
           <span className="fw-bold">Patrick</span>
             <Image 

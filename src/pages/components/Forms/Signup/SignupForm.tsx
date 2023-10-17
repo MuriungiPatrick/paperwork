@@ -8,9 +8,9 @@ const SignupForm = () => {
     
 <form className="form w-100" novalidate="novalidate" data-kt-redirect-url="../dist/authentication/sign-in/basic.html" id="kt_sign_up_form">
     <div className="mb-10 text-center">
-        <h1 className="text-dark mb-3">Create an Account</h1>
+        <h1 className="text-dark mb-3 pt-3">Create an Account</h1>
         <div className="text-gray-400 fw-semibold fs-4">Already have an account?
-        <a href="login" className="link-primary fw-bold">Sign in here</a></div>
+        <a href="login" className="link-primary">Sign in here</a></div>
     </div>
     <button type="button" className="btn btn-light-primary fw-bold w-100 mb-10">
     <img alt="Logo" src="assets/media/svg/brand-logos/google-icon.svg" className="h-20px me-3" />Sign in with Google</button>

@@ -2,24 +2,26 @@ import classNames from "classnames";
 import Link from 'next/link'
 import { useRouter } from "next/router";
 import CollapsIcon from './CollapsIcon';
-import LogoutIcon from './LogoutIcon';
 import { 
   Gear, HouseFill, 
   Unlock, Forward, 
   ChevronDoubleLeft, 
   ChatLeftText, 
   People, GearFill, 
-  Grid } from 'react-bootstrap-icons'
+  Grid, Power, BoxArrowLeft } from 'react-bootstrap-icons'
 import Image from 'next/image' 
 import React, { useState, useMemo } from "react";
 
 
+
 const menuItems = [
-  { id: 1, label: "Dashboard", icon: HouseFill, link: "/dashboard" },
-  { id: 2, label: "Profile", icon: People, link: "/dashboard/profile" },
-  { id: 3, label: "Settings", icon: Gear, link: "/dashboard/settings" },
-  { id: 4, label: "Login", icon: Unlock, link: "/login" },
-  { id: 5, label: "Signup", icon: People, link: "/register" },
+  { id: 1, tooltip: "Dashboard", label: "Dashboard", icon: HouseFill, link: "/dashboard" },
+  { id: 2, tooltip: "Profile", label: "Profile", icon: People, link: "/dashboard/profile" },
+  { id: 3, tooltip: "Settings", label: "Settings", icon: Gear, link: "/dashboard/settings" },
+  { id: 4, tooltip: "Login", label: "Login", icon: Unlock, link: "/login" },
+  { id: 5, tooltip: "Signup", label: "Signup", icon: People, link: "/register" },
+  { id: 6, tooltip: "Logout", label: "Logout", icon: Power, link: "logout" },
+  
 ];
 
 const Sidebar = () => {
@@ -36,13 +38,13 @@ const Sidebar = () => {
   const wrapperClasses = classNames(
     "h-100 pt-4 d-block py-3 border-bottom rounded-0",
     {
-      ["d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"]: !toggleCollapse,
+      ["d-flex align-items-center text-white text-decoration-none"]: !toggleCollapse,
       ["text-decoration-none"]: toggleCollapse,
     }
   );
 
   const collapseIconClasses = classNames(
-    "p-2 text-primary position-absolute px-8",
+    "p-2 text-primary position-absolute",
     {
       "rotate-180": toggleCollapse,
     }
@@ -83,7 +85,7 @@ const Sidebar = () => {
         />
 
      <span
-          className={classNames("nav-link text-primary active py-3 border-bottom rounded-0", {
+          className={classNames("nav-link text-primary py-3 border-bottom rounded-0", {
             hidden: toggleCollapse,
           })}
         >
@@ -94,7 +96,7 @@ const Sidebar = () => {
               className={collapseIconClasses}
               onClick={handleSidebarToggle}
             >
-              <CollapsIcon className="toggleicon" />
+              <CollapsIcon />
             </button>
           )}
 
@@ -110,23 +112,19 @@ const Sidebar = () => {
                     {!toggleCollapse && (
                       <span
                         className={classNames(
-                          "fw-bold px-3 fs-6"
+                          "fw-bold fs-6"
                         )}>
-                        {menu.label}
+                        {menu.icon}
                       </span>
                     )}
                  </Link>
               </li>              
           </div>
-        );
-      })}
-    </ul>
-    <LogoutIcon
-        className="p-3 text-bg-primary text-center mt-3 end-0"
-        size={35}
-        />
-  </div>   
-</div>
+          );
+        })}
+      </ul>
+    </div>   
+  </div>
 
 
   );

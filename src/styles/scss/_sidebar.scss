@@ -21,7 +21,12 @@
   overflow-y: auto;
 
 
+
   .nav-item {
+
+    a {
+      text-decoration: none;
+    }
       
 
       .icon {
@@ -42,5 +47,15 @@
 .form {
   padding: 0 1rem;
 }
+
+.p-10 {
+    padding: 2.5rem !important;
+}
+
+.toggleicon {
+  right: 1rem;
+  // background-color: $primary;
+}
+
   
   

@@ -16,8 +16,8 @@ const Dashboard: React.FC = () => {
   </Head>
   <section className="dashboard">
     <div className="text-center text-white">
-      <div className="bg-secondary p-3">
-      <h1>dashboard</h1>
+      <div className="bg-primary p-3">
+          <h1>dashboard</h1>
       </div>
     </div>
   </section>
