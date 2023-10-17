@@ -1,8 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) starter admin dashboard with bootstrap, sass and typescript
 
 ## Getting Started
 
-First, run the development server:
+
+First, clone this project and cd into the directory and run 
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+## Start the development server
 
 ```bash
 npm run dev
