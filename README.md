@@ -1,5 +1,14 @@
 This is a [Next.js](https://nextjs.org/) starter admin dashboard with bootstrap, sass and typescript
 
+
+![Profile](https://github.com/MuriungiPatrick/paperwork/assets/11283502/d4751366-8004-4b2f-afd4-e550b5bfe98c)
+
+
+![Dashboard](https://github.com/MuriungiPatrick/paperwork/assets/11283502/103c7325-0036-4cd4-9949-c69cdf19c5d2)
+
+
+
+
 ## Getting Started
 
 
@@ -21,6 +30,9 @@ yarn dev
 # or
 pnpm dev
 ```
+#### Login page
+
+![Login](https://github.com/MuriungiPatrick/paperwork/assets/11283502/61775470-f0c6-42c7-82f9-17e648902ea6)
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

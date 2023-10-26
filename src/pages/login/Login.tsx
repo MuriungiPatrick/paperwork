@@ -14,13 +14,7 @@ const Login = () => {
      <div className="row mt-5">
         <div className="col-lg-6 col-md-6 col-sm-12 bg-primary shadow p-3 border-3">
             <h4>Welcome to login page</h4>
-            <Image
-              
-              src="/images/logo.png"
-              width={50}
-              height={50} 
-              alt={'logo'}
-              />
+           
         </div>
         <div className="col-lg-6 col-md-6 col-sm-12 bg-white shadow p-3 border-3">
             <LoginForm />

@@ -11,14 +11,9 @@ const Header = () => {
   <header className="header shadow justify-content-between 
   d-flex align-items-center bg-white">
     <div className="align-items-center justify-content-between">
-      <Link href="index.html" 
+      <Link href="/" 
       className="logo d-flex align-items-center">
-        <Image 
-          src="/images/logo.png"
-          width={40}
-          height={80} 
-          alt={'logo'}
-          />
+        
         <span className="d-none d-lg-block">Logoz</span>
       </Link>
 
